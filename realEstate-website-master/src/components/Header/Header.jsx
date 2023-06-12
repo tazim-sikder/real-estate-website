@@ -31,7 +31,7 @@ const Header = () => {
             <a href="#contact-us">Contact Us</a>
             <a href="#get-started">Get Started</a>
             <button className="button">
-              <a href="mailto:zainkeepscode@gmail.com">Contact</a>
+              <a href="#">Contact</a>
             </button>
           </div>
         </OutsideClickHandler>
@@ -41,8 +41,14 @@ const Header = () => {
           className="menu-icon"
           onClick={() => setMenuOpened((prev) => !prev)}
         >
-          <BiMenuAltRight size={30} />
+        <div className="hamburger-container">
+          <div id="x-button" 
+               onClick={() => setMenuOpened((prev) => !prev)}>
+            x
+          </div>          
+          <BiMenuAltRight size={45} id="hamburger-menu" />
         </div>
+      </div>  
       </div>
     </section>
   );
