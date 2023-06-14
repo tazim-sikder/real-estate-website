@@ -68,9 +68,9 @@ a:hover {
   #x-button {
     position: absolute;
     color: black;
-    top: 50px;
+    top: 10px;
     z-index: 3;
-    right: 85px;
+    right: 35px;
     font-size: 25px;
     cursor: pointer;
   }

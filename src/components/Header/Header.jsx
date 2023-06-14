@@ -21,11 +21,18 @@ const Header = () => {
             setMenuOpened(false);
           }}
         >
+        
           <div
             // ref={menuRef}
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
+             <div className="hamburger-container">
+          <div id="x-button" 
+               onClick={() => setMenuOpened((prev) => !prev)}>
+            x
+          </div>  
+        </div>  
             <a href="#residencies">Residencies</a>
             <a href="#value">Our Value</a>
             <a href="#contact-us">Contact Us</a>
@@ -41,13 +48,8 @@ const Header = () => {
           className="menu-icon"
           onClick={() => setMenuOpened((prev) => !prev)}
         >
-        <div className="hamburger-container">
-          <div id="x-button" 
-               onClick={() => setMenuOpened((prev) => !prev)}>
-            x
-          </div>          
+             
           <BiMenuAltRight size={45} id="hamburger-menu" />
-        </div>
       </div>  
       </div>
     </section>
