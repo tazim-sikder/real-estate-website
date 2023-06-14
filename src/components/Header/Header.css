@@ -69,6 +69,7 @@ a:hover {
     position: relative;
   }
   #x-button {
+    display: block;
     position: absolute;
     color: black;
     top: 10px;
