@@ -24,6 +24,9 @@ a:hover {
 #hamburger-menu {
   cursor: pointer;
 }
+#x-button {
+  display: none;
+}
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
